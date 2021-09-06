@@ -1,0 +1,151 @@
+/* Version 1.8 */
+
+._DIALOG_BUTTON_GREEN {
+	background-color:rgba(0,61,0,1);
+	border:1px solid rgba(var(--b6a,0,255,0),0.8);
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+._DIALOG_BUTTON_RED {
+	background-color:rgba(61,0,0,1);
+	border:1px solid rgba(var(--b6a,255,0,0),0.8);
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+._DIALOG_BUTTON_AQUA {
+	background-color:rgba(31,133,222,1);
+	border:1px solid rgba(var(--b6a,0,255,255),1);
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+._DIALOG_B_BLACK {
+	background-color:rgba(25,25,25,1.0);
+	border:1px solid rgba(var(--b6a,204,0,0),1);
+	box-shadow:0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+._DIALOG_B_VIOLET {
+	background-color:rgba(10,0,80,0.75) !important;
+	border:1px solid rgba(0,0,255,0.75) !important;
+}
+
+._DIALOG_B_ALL {
+	border-radius:5px;
+}
+
+._DIALOG_B_ROUNDED {
+	border-radius:20px;
+}
+
+._DIALOG_INPUT_ERROR::placeholder {
+	color:#CC0000 !important;
+}
+
+._DIALOG_INPUT_ERROR::-ms-input-placeholder {
+	color:#CC0000 !important;
+}
+
+._DIALOG_INPUT_ERROR:-ms-input-placeholder {
+	color:#CC0000 !important;
+}
+
+._DIALOG_DISABLE_TEXT_SELECT {
+	-moz-user-select:none;
+	-webkit-user-select:none;
+	-ms-user-select:none;
+	user-select:none;
+	-o-user-select:none;
+}
+
+._DIALOG_ENABLE_TEXT_SELECT {
+	-webkit-user-select:text;
+	-khtml-user-select:text;
+	-moz-user-select:text;
+	-o-user-select:text;
+	user-select:text;
+}
+
+._DIALOG_IMAGE {
+	max-width:100%;
+	max-height:600px;
+}
+
+._DIALOG_TEXT {
+	white-space:nowrap;
+	overflow:hidden;
+	text-overflow:ellipsis;
+}
+
+._DIALOG_H:hover {
+	cursor:pointer;
+	color:#FFFFFF;
+	background-color:rgba(0,0,255,0.6);
+	border:1px solid rgba(0,255,255,0.75);
+}
+
+._DIALOG_H_INPUT:hover {
+	border:1px solid rgba(0,255,255,0.75) !important;
+}
+
+._DIALOG_STYLE_TEXTAREA {
+	width:70%;
+	resize:none;
+	height:600px;
+	text-align:left !important;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+._DIALOG_STYLE {
+	min-width:400px;
+	text-align:center;
+	color:#FFFFFF;
+	width:70%;
+	padding:25px;
+	font-family:Arial, sans-serif;
+	z-index:15000;
+	transform:translate(-50%);
+	overflow-wrap:anywhere;
+}
+
+._DIALOG_STYLE_MSGBOX {
+	position:fixed;
+	top:18.0vw;
+	left:50%;
+}
+
+._DIALOG_STYLE_CONTENT {
+	position:fixed;
+	top:3.0vw;
+	left:50%;
+}
+
+._DIALOG_STYLE_FORM {
+	position:absolute;
+	top:3.0vw;
+	left:50%;
+}
+
+._DIALOG_STYLE_INPUT_TEXT {
+	width:70%;
+}
+
+._DIALOG_STYLE_SELECT_OPTION {
+	text-align:center;
+	padding:3px;
+}
+
+._DIALOG_STYLE_MSGBOX_BUTTON {
+	text-align:center;
+	padding:3px;
+	width:80%;
+}
+
+#DIALOG_STYLE_MSGBOX_CAPTION {
+	font-size:120%;
+	color:#00AAFF;
+}
+
+#DIALOG_STYLE_MSGBOX_INFO {
+	color:#FFFFFF;
+}

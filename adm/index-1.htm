@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+						<meta charset="UTF-8" />
+		<link rel="shortcut icon" href="bishop.png" tppabs="https://adm.ct8.pl/images/bishop.png" type="image/x-icon" />
+		<link rel="stylesheet" href="bootstrap.min.css" tppabs="https://adm.ct8.pl/plugins/bootstrap/5.0.0/css/bootstrap.min.css">
+		<link rel="stylesheet" href="bootstrap-grid.min.css" tppabs="https://adm.ct8.pl/plugins/bootstrap/5.0.0/css/bootstrap-grid.min.css">
+		<script src="jquery-3.5.1.js" tppabs="https://adm.ct8.pl/plugins/jquery/jquery-3.5.1.js"></script>
+		<script src="bootstrap.min.js" tppabs="https://adm.ct8.pl/plugins/bootstrap/5.0.0/js/bootstrap.min.js"></script>
+		<script src="functions.js" tppabs="https://adm.ct8.pl/plugins/functions.js"></script>
+		<script src="dialog_en.js-ver=1.11.js" tppabs="https://adm.ct8.pl/plugins/dialog/dialog_en.js?ver=1.11"></script>
+		<script src="dialog.js-ver=1.11.js" tppabs="https://adm.ct8.pl/plugins/dialog/dialog.js?ver=1.11"></script>
+		<link rel="stylesheet" href="dialog.css-ver=1.7.css" tppabs="https://adm.ct8.pl/plugins/dialog/dialog.css?ver=1.7">
+		<link rel="stylesheet" href="font-awesome.css" tppabs="https://adm.ct8.pl/plugins/fontawesome/font-awesome.css">
+		<link rel="stylesheet" href="style.css-ver=1.4.css" tppabs="https://adm.ct8.pl/css/style.css?ver=1.4">		<script src="filemanager_en.js-ver=1.15.js" tppabs="https://adm.ct8.pl/download/filemanager_en.js?ver=1.15"></script>
+		<script src="filemanager.js-ver=1.16.js" tppabs="https://adm.ct8.pl/download/filemanager.js?ver=1.16"></script>
+		<title>Download</title>
+	</head>
+	<body class="disable_text_select">
+		<div id="loader_background"></div>
+		<div id="website_container" style="display:none;">
+			<center>
+				<nav class="navbar navbar-expand-lg navbar-dark b_dark b_rounded" style="width:96%;margin-top:15px;padding:15px 20px 20px 20px;">
+					<div style="padding:5px 5px 0px 0px;">
+						<a href="index.htm" tppabs="https://adm.ct8.pl/"><div class="navbar-brand btn btn-info">Home page</div></a>
+					</div>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarSupportedContent">
+						<ul class="navbar-nav me-auto mb-2 mb-lg-0">							
+							<li class="nav-item dropdown" style="padding:5px 10px 0px 0px;min-width:150px;">
+								<a class="nav-link btn btn-secondary" href="#" id="menu_ave" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links</a>
+								<div class="dropdown-menu" style="min-width:200px;">
+									<a style="color:#212529;" href="javascript:if(confirm(%27https://github.com/abyssmorgan  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://github.com/abyssmorgan%27" tppabs="https://github.com/abyssmorgan" target="_blank">
+										<div style="padding:1px 10px 1px 10px;">
+											<div class="_hov" style="float:left;">Github</div>
+										</div>
+									</a><br>
+									<a style="color:#212529;" href="javascript:if(confirm(%27https://discord.com/invite/Z43HHMt  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://discord.com/invite/Z43HHMt%27" tppabs="https://discord.com/invite/Z43HHMt" target="_blank">
+										<div style="padding:1px 10px 1px 10px;">
+											<div class="_hov" style="float:left;">Discord</div>
+										</div>
+									</a><br>
+									<a style="color:#212529;" href="javascript:if(confirm(%27https://www.youtube.com/channel/UCsglpbCjSvV1W5ERwpX7d9g  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.youtube.com/channel/UCsglpbCjSvV1W5ERwpX7d9g%27" tppabs="https://www.youtube.com/channel/UCsglpbCjSvV1W5ERwpX7d9g" target="_blank">
+										<div style="padding:1px 10px 1px 10px;">
+											<div class="_hov" style="float:left;">YouTube</div>
+										</div>
+									</a><br>
+									<a style="color:#212529;" href="javascript:if(confirm(%27https://www.burgershot.gg/member.php?action=profile&uid=3654  \n\nThis file was not retrieved by Teleport Ultra, because it is addressed on a domain or path outside the boundaries set for its Starting Address.  \n\nDo you want to open it from the server?%27))window.location=%27https://www.burgershot.gg/member.php?action=profile&uid=3654%27" tppabs="https://www.burgershot.gg/member.php?action=profile&uid=3654" target="_blank">
+										<div style="padding:1px 10px 1px 10px;">
+											<div class="_hov" style="float:left;">Burger Shot</div>
+										</div>
+									</a><br>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</nav>
+				
+				<div id="dialog" style="display:none;"></div>
+				<br>
+				<div id="output_container" class="b_dark b_rounded" style="min-height:500px;">
+					&nbsp;
+				</div>
+				<br><br>
+			</center>
+		</div>
+		<script>
+			$(window).on("load",function(){
+				$("#loader_background").fadeOut();
+				$("#website_container").show();
+				user_list_type = getCookie("filemanager_list_type");
+				if(user_list_type == '') user_list_type = 'b';
+				SetPath(getCookie('last_directory'));
+			});
+		</script>
+	</body>
+</html>
